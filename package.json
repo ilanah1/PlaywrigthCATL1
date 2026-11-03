@@ -1,0 +1,24 @@
+{
+  "name": "enterprise-ecommerce-playwright-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scalable Playwright TypeScript automation framework for Automation Exercise",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report reports/html",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.15.30",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3"
+  }
+}
